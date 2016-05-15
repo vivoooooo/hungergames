@@ -7,11 +7,11 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.destroy_all
-u1 = User.where(name: "Cheer Bear", number_of_kills: "1", is_alive: true).first_or_create
-u2 = User.where(name: "Sleepy Bear", number_of_kills: "0", is_alive: true).first_or_create
-u3 = User.where(name: "Tenderheart Bear", number_of_kills: "0", is_alive: true).first_or_create
-u4 = User.where(name: "Lucky Bear", number_of_kills: "0", is_alive: false).first_or_create
-u5 = User.where(name: "Angry Bear", number_of_kills: "0", is_alive: false).first_or_create
+u1 = User.where(name: "Cheer Bear", email: "cheer@bear.com", password: "chicken", number_of_kills: "1", is_alive: true).first_or_create
+u2 = User.where(name: "Sleepy Bear", email: "sleepy@bear.com", password: "chicken", number_of_kills: "0", is_alive: true).first_or_create
+u3 = User.where(name: "Tenderheart Bear", email: "tenderheart@bear.com", password: "chicken", number_of_kills: "0", is_alive: true).first_or_create
+u4 = User.where(name: "Lucky Bear", email: "lucky@bear.com", password: "chicken",  number_of_kills: "0", is_alive: false).first_or_create
+u5 = User.where(name: "Angry Bear", email: "angry@bear.com", password: "chicken", number_of_kills: "0", is_alive: false).first_or_create
 
 Weapon.destroy_all
 w1 = Weapon.where(name: "rainbows").first_or_create

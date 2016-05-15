@@ -3,14 +3,14 @@
 # Table name: users
 #
 #  id              :integer          not null, primary key
-#  name            :string
-#  email           :string
-#  password        :string
+#  name            :string           not null
+#  email           :string           not null
+#  password        :string           not null
 #  picture         :string
-#  number_of_kills :integer
+#  number_of_kills :integer          default("0")
 #  created_at      :datetime         not null
 #  updated_at      :datetime         not null
-#  is_alive        :boolean
+#  is_alive        :boolean          default("true")
 #
 
 class User < ActiveRecord::Base
