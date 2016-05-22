@@ -1,49 +1,8 @@
 Rails.application.routes.draw do
-  root :to => 'pages#index'
-  
-  get 'weapons/index'
-
-  get 'weapons/show'
-
-  get 'weapons/edit'
-
-  get 'weapons/update'
-
-  get 'weapons/new'
-
-  get 'weapons/create'
-
-  get 'weapons/destroy'
-
-  get 'friendships/index'
-
-  get 'friendships/show'
-
-  get 'friendships/edit'
-
-  get 'friendships/update'
-
-  get 'friendships/new'
-
-  get 'friendships/create'
-
-  get 'friendships/destroy'
-
-  get 'users/index'
-
-  get 'users/show'
-
-  get 'users/edit'
-
-  get 'users/update'
-
+  root 'pages#index'
+  resources :users, except: :new
   get 'signup' => 'users#new'
-
-  get 'users/create'
-
-  get 'users/destroy'
-
-    resources :users, :weapons, :friendships
+  # resources :weapons, :friendships
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
