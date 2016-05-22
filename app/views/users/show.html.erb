@@ -1,2 +1,9 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<p>User name : <%= @user.name %>
+<p>Email : <%= @user.email %>
+<p>Number of Kills : <%= @user.number_of_kills %>
+<% if @user.is_alive == true  %>
+		<p>You are currently alive</p>
+	<% else %>
+		<p>You are currently dead</p>
+	<% end  %>
+	
