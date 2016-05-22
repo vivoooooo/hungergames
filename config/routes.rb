@@ -37,7 +37,7 @@ Rails.application.routes.draw do
 
   get 'users/update'
 
-  get 'users/new'
+  get 'signup' => 'users#new'
 
   get 'users/create'
 
