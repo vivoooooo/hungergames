@@ -1,5 +1,5 @@
 class RemoveUserPasswordColumn < ActiveRecord::Migration
-  def down
+  def change
     remove_column :users, :password
   end
 end
