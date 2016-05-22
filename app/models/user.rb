@@ -5,6 +5,7 @@
 #  id              :integer          not null, primary key
 #  name            :string           not null
 #  email           :string           not null
+#  password        :string           not null
 #  picture         :string
 #  number_of_kills :integer          default("0")
 #  created_at      :datetime         not null

@@ -1,5 +1,15 @@
 <h1>Edit Account</h1>
+<% if @user.errors.any? %>
+  <ol>
+    <% @user.errors.full_messages.each do |msg| %>
+  
+      <div class="form-group">
+        <%= msg %>
+        </div>
 
+    <% end %>
+  </ol>
+<% end %>
 
 <%= form_for(@user) do |f| %>
   <%= f.label :name %>
